@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  db:
+    container_name: knex_db
+    image: postgis/postgis
+    ports:
+      - 6006:5432
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password123
